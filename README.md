@@ -1,3 +1,20 @@
+# :four_leaf_clover:四叶草拼音输入方案
+
+## Modifications
+
+Remove some keybindings:
+Shift+Space (easy mistouching), Shift+Ctrl+f/F (collipsing with Jetbrains global searching)
+
+## License
+
+Modifications Copyright (c) myl7
+
+According to LGPL 3.0 of the original project, the modifications are still licensed under LGPL 3.0
+
+The following is the original README:
+
+---
+
 你是否经历过搜狗输入法总是闪退bug的绝望？
 
 你是否经历过 fcitx 自带输入法的词库简陋？
@@ -34,7 +51,7 @@
    - 由百度搜索到某个人基于大数据做过的[360万中文词库+词性+词频](https://download.csdn.net/download/xmp3x/8621683)，该词库是用ansj分词对270G新闻语料进行分词统计词频获得
    - [清华大学开源词库](https://github.com/thunlp/THUOCL)，统计来自各大主流网站如CSDN博客、新浪新闻、搜狗语料
    - 搜狗细胞词库 [网络流行新词【官方推荐】](https://pinyin.sogou.com/dict/detail/index/4)
-  
+
 2. 词库本身基于简体，并且加入繁简切换，包括自定义词库也能切换繁体（朙月拼音输入简体时的需要经过opencc转换，而且自定义词库也得手动转换成繁体才能繁简切换，而袖珍简化字拼音不支持繁体）
 
 3. 默认加入 emoji 表情输入支持

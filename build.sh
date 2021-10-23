@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eo pipefail
 
 SHELL_FOLDER=$(dirname $(readlink -f "$0"))
 
@@ -11,13 +12,6 @@ find_downloader(){
 	# 寻找下载器
 	#   会设置 $downloader 和 $down_out_op 变量
 
-	# 寻找 aria2c
-	if type aria2c >/dev/null 2>&1; then
-		downloader=aria2c
-		down_out_op=-o
-		return
-	fi
-
 	# 寻找 wget
 	if type wget >/dev/null 2>&1; then
 		downloader=wget
@@ -28,6 +22,15 @@ find_downloader(){
 	# 寻找 curl
 	if type curl >/dev/null 2>&1; then
 		downloader=curl
+		down_out_op=-o
+		return
+	fi
+
+	# 寻找 aria2c
+	# Preferring aria2 causes "address already in use" when there is existing aria2 instance
+	# So move it to the end of the searching list
+	if type aria2c >/dev/null 2>&1; then
+		downloader=aria2c
 		down_out_op=-o
 		return
 	fi
@@ -162,4 +165,3 @@ cp ../cache/rime-symbols/opencc/* opencc
 echo 开始构建部署二进制
 rime_deployer --compile clover.schema.yaml . /usr/share/rime-data || exit
 rm -rf build/*.txt
-

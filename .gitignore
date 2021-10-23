@@ -1,2 +1,5 @@
 cache/
 data/
+/build/*
+!/build/PKGBUILD
+venv/

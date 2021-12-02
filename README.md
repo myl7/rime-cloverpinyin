@@ -106,7 +106,7 @@ rime基础配置： [librime-prelude](https://github.com/rime/rime-prelude)
 克隆此仓库，然后直接执行构建即可
 
 ```shell
-./build
+./build.sh
 ```
 
 完成后，会生成 cache 目录和 data 目录
@@ -119,7 +119,7 @@ rime基础配置： [librime-prelude](https://github.com/rime/rime-prelude)
 其中，执行 build 时，可以有个参数
 
 ```shell
-./build [minfreq]
+./build.sh [minfreq]
 ```
 
 minfreq 代表360万词里面指定的最小词频，频率低于该值的词语会被筛选掉，达到精简词库的目的，默认是100，该值越小，最终生成的词库越大，为 0 表示不精简词库（会生成大约 100 兆左右的词库）。
@@ -127,7 +127,7 @@ minfreq 代表360万词里面指定的最小词频，频率低于该值的词语
 构建完成后，可以打包，在 data 目录生成发布用的压缩包
 
 ```
-./pack [ver]
+./pack.sh [ver]
 ```
 
 ver 表示版本号，例如 1.1.2

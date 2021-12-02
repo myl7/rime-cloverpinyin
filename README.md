@@ -5,9 +5,9 @@
 - Remove some keybindings:
 Shift+Space (easy mistouching), Shift+Ctrl+f/F (collipsing with Jetbrains global searching)
 - Merge pending patches
-  - fkxxyz/rime-cloverpinyin#85
-  - fkxxyz/rime-cloverpinyin#100
-  - fkxxyz/rime-cloverpinyin#106
+  - https://github.com/fkxxyz/rime-cloverpinyin/pull/85
+  - https://github.com/fkxxyz/rime-cloverpinyin/issues/100
+  - https://github.com/fkxxyz/rime-cloverpinyin/issues/106
 
 ## License
 

@@ -160,7 +160,10 @@ cd ../data
 # 生成 opencc 目录
 mkdir -p opencc
 cp ../cache/rime-emoji/opencc/* opencc
+sed -i '/污染\t污染 🏭️/d' opencc/emoji_word.txt
 cp ../cache/rime-symbols/opencc/* opencc
+sed -i '/\t ㏍/d' opencc/symbol_word.txt
+sed -i '/\t ㏎/d' opencc/symbol_word.txt
 
 echo 开始构建部署二进制
 rime_deployer --compile clover.schema.yaml . /usr/share/rime-data || exit

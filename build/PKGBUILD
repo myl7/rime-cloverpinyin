@@ -2,7 +2,7 @@
 # Maintainer: myl7 <myl@myl.moe>
 
 pkgname=rime-cloverpinyin
-pkgver=1.2.1
+pkgver=1.2.2
 pkgrel=1
 pkgdesc="Clover Simplified pinyin input for rime"
 arch=('x86_64')
@@ -11,7 +11,7 @@ license=('LGPL')
 depends=('rime-prelude' 'rime-emoji' 'rime-symbols')
 makedepends=('librime')
 source=(https://github.com/myl7/rime-cloverpinyin/releases/download/${pkgver}/clover.schema-${pkgver}.zip)
-sha256sums=('577e470ca36e80c03e32eb74998421b5717146f089e99173bbdf56ad40c08bc2')
+sha256sums=('06f76a1a9604ca5c8dad80b4cd369a3af258ee2c89747e3a8d3ec5363937e210')
 
 build(){
   cd $srcdir

@@ -1,5 +1,9 @@
 # :four_leaf_clover:四叶草拼音输入方案
 
+## Archived
+
+I has switched to [iDvel/rime-ice](https://github.com/iDvel/rime-ice)
+
 ## Modifications
 
 - Remove some keybindings:
